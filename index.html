@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#5c38ef" />
+  <meta name="description" content="1.º Congreso de Estudiantes de Administración - UAEH ICEA" />
+  <title>1.º Congreso de Estudiantes de Administración | ICEA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">1º</span><span>Congreso de Estudiantes<br><b>Administración</b></span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="mainNav" aria-label="Navegación principal">
+    <a href="#inicio" data-view="inicio" class="active">Inicio</a>
+    <a href="#programa" data-view="programa">Programa</a>
+    <a href="#agenda" data-view="agenda">Mi Agenda <span id="agendaCount" class="count">0</span></a>
+    <a href="#constancias" data-view="constancias">Constancias</a>
+  </nav>
+</header>
+<main>
+  <section id="inicio" class="view active-view">
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">UAEH · ICEA · Licenciatura en Administración</p>
+        <h1><span>1.º Congreso de Estudiantes</span> de Administración</h1>
+        <p class="lema">“Emprendimiento, Innovación y Competitividad”</p>
+        <div class="event-meta"><strong>29 y 30 de octubre de 2026</strong><span>Instituto de Ciencias Económico Administrativas · Edificio C</span></div>
+        <div class="deadline" id="deadlineBox"><span>Recepción de trabajos hasta</span><strong>19 de septiembre</strong><span id="countdown"></span></div>
+        <div class="hero-actions"><a class="btn primary" id="registerTop" target="_blank" rel="noopener">Registrar propuesta</a><a class="btn secondary" id="callTop" target="_blank" rel="noopener">Consultar convocatoria</a></div>
+        <p class="micro">Participación gratuita · Ponencia o cartel científico · Modalidad presencial</p>
+      </div>
+      <div class="hero-art"><img id="heroImg" alt="Identidad gráfica del Congreso de Estudiantes de Administración" /></div>
+    </div>
+
+    <section class="section intro-grid">
+      <div><p class="eyebrow">Convocatoria 2026</p><h2>Tu investigación merece un espacio para ser escuchada.</h2><p id="objective"></p><p id="audience"></p></div>
+      <aside class="cta-panel"><p class="kicker">Faltan pocos días para el cierre</p><h3>Comparte tu avance o proyecto de investigación.</h3><a class="btn light" id="registerMid" target="_blank" rel="noopener">Ir al formulario de registro</a><p>No tiene costo de inscripción.</p></aside>
+    </section>
+
+    <section class="section"><div class="section-head"><div><p class="eyebrow">Participa</p><h2>Dos modalidades, un mismo propósito</h2></div></div><div id="modalidades" class="modalidades"></div></section>
+    <section class="section soft"><div class="section-head"><div><p class="eyebrow">Líneas de investigación</p><h2>¿Dónde encaja tu trabajo?</h2></div></div><div id="tematicas" class="themes"></div></section>
+
+    <section class="section visual-call">
+      <div><p class="eyebrow">Consulta completa</p><h2>Convocatoria en extenso</h2><p>Revisa requisitos de ponencias y carteles, formato de archivos, arbitraje, premiación, sede e información de contacto.</p><div class="hero-actions"><a class="btn primary" id="callBottom" target="_blank" rel="noopener">Abrir convocatoria PDF</a><a class="text-link" id="registerBottom" target="_blank" rel="noopener">Registrar propuesta →</a></div></div>
+      <img id="summaryImg" alt="Resumen visual de la convocatoria" />
+    </section>
+
+    <section class="section venue"><div><p class="eyebrow">Sede</p><h2>ICEA · Edificio C</h2><p id="address"></p><p class="muted">El croquis detallado de sedes se integrará aquí cuando sea proporcionado por el comité organizador.</p></div><div class="venue-letter">C</div></section>
+  </section>
+
+  <section id="programa" class="view">
+    <div class="page-head"><p class="eyebrow">Programa</p><h1>Programa general</h1><p>Esta sección está preparada para cargarse desde la fuente maestra del congreso sin modificar el diseño.</p></div>
+    <div id="programToolbar" class="toolbar" hidden><input id="globalSearch" type="search" placeholder="Buscar por folio, título, autor, mesa o bloque…" autocomplete="off"><select id="filterBlock"><option value="">Todas las mesas/bloques</option></select><select id="filterMod"><option value="">Todas las modalidades</option></select><select id="filterType"><option value="">Todos los tipos</option></select></div>
+    <div id="programContent"></div>
+  </section>
+
+  <section id="agenda" class="view"><div class="page-head"><p class="eyebrow">Personaliza tu visita</p><h1>Mi Agenda</h1><p>Las participaciones que selecciones se guardarán en este navegador.</p></div><div id="agendaContent"></div></section>
+  <section id="constancias" class="view"><div class="page-head"><p class="eyebrow">Constancias</p><h1>Constancias de participación</h1><p id="certificateMessage">La fecha de liberación de constancias será publicada por el comité organizador.</p></div></section>
+</main>
+<footer><div><b>1.º Congreso de Estudiantes de Administración</b><br><span>Universidad Autónoma del Estado de Hidalgo · ICEA</span></div><div><span>Informes:</span> <a id="emailLink"></a></div></footer>
+<dialog id="detailModal"><button class="modal-close" aria-label="Cerrar" onclick="this.closest('dialog').close()">×</button><div id="modalBody"></div></dialog>
+<script src="app.js"></script>
+</body>
+</html>

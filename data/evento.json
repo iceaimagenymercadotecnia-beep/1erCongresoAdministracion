@@ -1,0 +1,37 @@
+{
+  "evento": {
+    "nombre": "1.º Congreso de Estudiantes de Administración",
+    "lema": "Emprendimiento, Innovación y Competitividad",
+    "institucion": "Universidad Autónoma del Estado de Hidalgo · Instituto de Ciencias Económico Administrativas · Licenciatura en Administración",
+    "fechas": ["2026-10-29", "2026-10-30"],
+    "fechaTexto": "29 y 30 de octubre de 2026",
+    "sede": "Instituto de Ciencias Económico Administrativas, Edificio C",
+    "direccion": "Circuito La Concepción, Km 2.5, Col. San Juan Tilcuautla, San Agustín Tlaxiaca, Hidalgo, México",
+    "modalidadEvento": "Presencial",
+    "objetivo": "Promover la investigación entre estudiantes del nivel superior de Administración y áreas afines, a través de la socialización de experiencias y resultados de investigación, con el fin de fortalecer sus conocimientos y contribuir al desarrollo de su campo profesional.",
+    "dirigidoA": "Estudiantes de Licenciatura en Administración y áreas afines en las Ciencias Económico Administrativas de Instituciones de Educación Superior nacionales e internacionales.",
+    "registroCierre": "2026-09-19T23:59:59-06:00",
+    "registroCierreTexto": "sábado 19 de septiembre de 2026",
+    "registroUrl": "https://forms.gle/2Ah1dYZjAcwuBG1S8",
+    "contacto": "congresoestudiantesaaa@gmail.com",
+    "gratuito": true,
+    "coordinador": "Dr. Tirso Javier Hernández Gracia"
+  },
+  "tematicas": [
+    "Competitividad, Emprendimiento e Innovación",
+    "Capital Humano, Gestión de las Organizaciones y MiPyMEs",
+    "Otros temas afines a las Ciencias Económico Administrativas"
+  ],
+  "modalidadesParticipacion": [
+    {"nombre":"Ponencia","descripcion":"Exposición de avances o de proyectos de investigación concluidos","maxParticipantes":"3 integrantes como máximo; el autor principal deberá ser alumno"},
+    {"nombre":"Cartel científico","descripcion":"Propuestas en proceso o concluidas, originales, empíricas o documentales","maxParticipantes":"5 alumnos como máximo, acompañados de 1 asesor"}
+  ],
+  "programa": [],
+  "constancias": {"fechaLiberacion": null, "archivos": []},
+  "recursos": {
+    "convocatoriaPdf": "assets/convocatoria.pdf",
+    "hero": "assets/identidad-congreso.png",
+    "resumenVisual": "assets/convocatoria-resumen.png",
+    "registroVisual": "assets/registro-cierre.png"
+  }
+}
