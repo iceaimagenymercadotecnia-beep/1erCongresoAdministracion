@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div id="deadlineModal" class="deadline-modal" role="dialog" aria-modal="true" aria-labelledby="deadlineTitle">
+  <div class="deadline-modal-card">
+    <button id="deadlineClose" class="deadline-close" aria-label="Cerrar aviso">×</button>
+    <p class="deadline-label">Convocatoria · Nueva fecha</p>
+    <h2 id="deadlineTitle">¡Ampliamos la fecha de recepción!</h2>
+    <p class="deadline-subtitle">Ponencias y carteles científicos</p>
+    <div class="deadline-date"><span>Ahora tienes hasta el</span><strong>30</strong><div><b>DE SEPTIEMBRE</b><span>DE 2026</span></div></div>
+    <p class="deadline-copy">Todavía estás a tiempo de compartir tu investigación, proyecto o idea en el 1er Congreso de Estudiantes de Administración.</p>
+    <div class="deadline-actions"><a class="btn primary" id="registerNotice" target="_blank" rel="noopener">Registrar propuesta</a><a class="btn secondary" id="callNotice" target="_blank" rel="noopener">Consultar convocatoria</a></div>
+  </div>
+</div>
 <header class="topbar">
   <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">1er</span><span>Congreso de Estudiantes<br><b>Administración</b></span></a>
   <button id="menuBtn" class="menu-btn" aria-label="Abrir menú" aria-expanded="false">Menú</button>
@@ -20,6 +31,7 @@
   </nav>
 </header>
 <main>
+  <div class="deadline-strip" id="deadlineStrip"><strong>Nueva fecha de recepción:</strong> ponencias y carteles hasta el <b>30 de septiembre de 2026</b>. <a id="registerStrip" target="_blank" rel="noopener">Registrar propuesta →</a></div>
   <section id="inicio" class="view active-view">
     <div class="hero">
       <div class="hero-copy">
@@ -27,7 +39,7 @@
         <h1><span>1er Congreso de Estudiantes</span> de Administración</h1>
         <p class="lema">“Emprendimiento, Innovación y Competitividad”</p>
         <div class="event-meta"><strong>29 y 30 de octubre de 2026</strong><span>Instituto de Ciencias Económico Administrativas · Edificio C</span></div>
-        <div class="deadline" id="deadlineBox"><span>Recepción de trabajos hasta</span><strong>19 de septiembre</strong><span id="countdown"></span></div>
+        <div class="deadline" id="deadlineBox"><span>Recepción de trabajos hasta</span><strong>30 de septiembre</strong><span id="countdown"></span></div>
         <div class="hero-actions"><a class="btn primary" id="registerTop" target="_blank" rel="noopener">Registrar propuesta</a><a class="btn secondary" id="callTop" target="_blank" rel="noopener">Consultar convocatoria</a></div>
         <p class="micro">Participación gratuita · Ponencia o cartel científico · Modalidad presencial</p>
       </div>
@@ -36,7 +48,7 @@
 
     <section class="section intro-grid">
       <div><p class="eyebrow">Convocatoria 2026</p><h2>Tu investigación merece un espacio para ser escuchada.</h2><p id="objective"></p><p id="audience"></p></div>
-      <aside class="cta-panel"><p class="kicker">Faltan pocos días para el cierre</p><h3>Comparte tu avance o proyecto de investigación.</h3><a class="btn light" id="registerMid" target="_blank" rel="noopener">Ir al formulario de registro</a><p>No tiene costo de inscripción.</p></aside>
+      <aside class="cta-panel"><p class="kicker">Nueva fecha de recepción</p><h3>Comparte tu avance o proyecto de investigación.</h3><a class="btn light" id="registerMid" target="_blank" rel="noopener">Ir al formulario de registro</a><p>No tiene costo de inscripción.</p></aside>
     </section>
 
     <section class="section"><div class="section-head"><div><p class="eyebrow">Participa</p><h2>Dos modalidades, un mismo propósito</h2></div></div><div id="modalidades" class="modalidades"></div></section>
