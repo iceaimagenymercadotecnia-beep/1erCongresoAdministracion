@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#5c38ef" />
-  <meta name="description" content="1.º Congreso de Estudiantes de Administración - UAEH ICEA" />
-  <title>1.º Congreso de Estudiantes de Administración | ICEA</title>
+  <meta name="description" content="1er Congreso de Estudiantes de Administración - UAEH ICEA" />
+  <title>1er Congreso de Estudiantes de Administración | ICEA</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header class="topbar">
-  <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">1º</span><span>Congreso de Estudiantes<br><b>Administración</b></span></a>
+  <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">1er</span><span>Congreso de Estudiantes<br><b>Administración</b></span></a>
   <button id="menuBtn" class="menu-btn" aria-label="Abrir menú" aria-expanded="false">Menú</button>
   <nav id="mainNav" aria-label="Navegación principal">
     <a href="#inicio" data-view="inicio" class="active">Inicio</a>
@@ -24,7 +24,7 @@
     <div class="hero">
       <div class="hero-copy">
         <p class="eyebrow">UAEH · ICEA · Licenciatura en Administración</p>
-        <h1><span>1.º Congreso de Estudiantes</span> de Administración</h1>
+        <h1><span>1er Congreso de Estudiantes</span> de Administración</h1>
         <p class="lema">“Emprendimiento, Innovación y Competitividad”</p>
         <div class="event-meta"><strong>29 y 30 de octubre de 2026</strong><span>Instituto de Ciencias Económico Administrativas · Edificio C</span></div>
         <div class="deadline" id="deadlineBox"><span>Recepción de trabajos hasta</span><strong>19 de septiembre</strong><span id="countdown"></span></div>
@@ -40,6 +40,7 @@
     </section>
 
     <section class="section"><div class="section-head"><div><p class="eyebrow">Participa</p><h2>Dos modalidades, un mismo propósito</h2></div></div><div id="modalidades" class="modalidades"></div></section>
+    <section class="section soft"><div class="section-head"><div><p class="eyebrow">Programa confirmado</p><h2>Momentos centrales del Congreso</h2></div></div><div id="centralMoments" class="modalidades"></div><div class="hero-actions"><a class="btn secondary" href="#programa">Consultar programa general</a><a class="text-link" href="assets/programa-general.pdf" target="_blank" rel="noopener">Abrir programa PDF →</a></div></section>
     <section class="section soft"><div class="section-head"><div><p class="eyebrow">Líneas de investigación</p><h2>¿Dónde encaja tu trabajo?</h2></div></div><div id="tematicas" class="themes"></div></section>
 
     <section class="section visual-call">
@@ -51,15 +52,17 @@
   </section>
 
   <section id="programa" class="view">
-    <div class="page-head"><p class="eyebrow">Programa</p><h1>Programa general</h1><p>Esta sección está preparada para cargarse desde la fuente maestra del congreso sin modificar el diseño.</p></div>
-    <div id="programToolbar" class="toolbar" hidden><input id="globalSearch" type="search" placeholder="Buscar por folio, título, autor, mesa o bloque…" autocomplete="off"><select id="filterBlock"><option value="">Todas las mesas/bloques</option></select><select id="filterMod"><option value="">Todas las modalidades</option></select><select id="filterType"><option value="">Todos los tipos</option></select></div>
+    <div class="page-head"><p class="eyebrow">Programa</p><h1>Programa general y talleres</h1><p>Consulta las actividades confirmadas para el 29 y 30 de octubre y regístrate directamente a los talleres.</p><div class="hero-actions"><a class="text-link" href="assets/programa-general.pdf" target="_blank" rel="noopener">Programa general PDF →</a><a class="text-link" href="assets/talleres.pdf" target="_blank" rel="noopener">Talleres PDF →</a></div></div>
+    <div class="program-tabs"><button class="active" data-program-tab="all">Todo</button><button data-program-tab="general">Programa general</button><button data-program-tab="2026-10-29">29 de octubre</button><button data-program-tab="2026-10-30">30 de octubre</button><button data-program-tab="talleres">Talleres</button></div>
+    <input id="programMode" type="hidden" value="all">
+    <div id="programToolbar" class="toolbar" hidden><input id="globalSearch" type="search" placeholder="Buscar actividad, conferencia, instructor o taller…" autocomplete="off"><select id="filterDay"><option value="">Todos los días</option><option value="2026-10-29">29 de octubre</option><option value="2026-10-30">30 de octubre</option></select><select id="filterType"><option value="">Todos los tipos</option></select></div>
     <div id="programContent"></div>
   </section>
 
   <section id="agenda" class="view"><div class="page-head"><p class="eyebrow">Personaliza tu visita</p><h1>Mi Agenda</h1><p>Las participaciones que selecciones se guardarán en este navegador.</p></div><div id="agendaContent"></div></section>
   <section id="constancias" class="view"><div class="page-head"><p class="eyebrow">Constancias</p><h1>Constancias de participación</h1><p id="certificateMessage">La fecha de liberación de constancias será publicada por el comité organizador.</p></div></section>
 </main>
-<footer><div><b>1.º Congreso de Estudiantes de Administración</b><br><span>Universidad Autónoma del Estado de Hidalgo · ICEA</span></div><div><span>Informes:</span> <a id="emailLink"></a></div></footer>
+<footer><div><b>1er Congreso de Estudiantes de Administración</b><br><span>Universidad Autónoma del Estado de Hidalgo · ICEA</span></div><div><span>Informes:</span> <a id="emailLink"></a></div></footer>
 <dialog id="detailModal"><button class="modal-close" aria-label="Cerrar" onclick="this.closest('dialog').close()">×</button><div id="modalBody"></div></dialog>
 <script src="app.js"></script>
 </body>
